@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A2BFDC41F4BD71C004F5EBD /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BFDC31F4BD71C004F5EBD /* SpeechManager.swift */; };
+		3A2BFDC61F4BD921004F5EBD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2BFDC51F4BD921004F5EBD /* AVFoundation.framework */; };
+		3A2BFDC71F4BD928004F5EBD /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2BFDC11F4BD703004F5EBD /* Speech.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		3A38236E1F453FE500821497 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A38236D1F453FE500821497 /* CoreBluetooth.framework */; };
+		3A3823711F45406B00821497 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3823701F45406B00821497 /* BluetoothManager.swift */; };
+		3A3823731F4540A800821497 /* StreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3823721F4540A800821497 /* StreamManager.swift */; };
+		3A4A11951F46A1C50015753C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4A11931F46A1C50015753C /* LaunchScreen.storyboard */; };
+		3AA071891F447FC80087107E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA071881F447FC80087107E /* AppDelegate.swift */; };
+		3AA0718B1F447FC80087107E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0718A1F447FC80087107E /* ViewController.swift */; };
+		3AA0718E1F447FC80087107E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA0718C1F447FC80087107E /* Main.storyboard */; };
+		3AA071901F447FC80087107E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA0718F1F447FC80087107E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A2BFDC11F4BD703004F5EBD /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		3A2BFDC31F4BD71C004F5EBD /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		3A2BFDC51F4BD921004F5EBD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3A38236D1F453FE500821497 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3A3823701F45406B00821497 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		3A3823721F4540A800821497 /* StreamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamManager.swift; sourceTree = "<group>"; };
+		3A4A11941F46A1C50015753C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AA071851F447FC80087107E /* RemoteCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA071881F447FC80087107E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AA0718A1F447FC80087107E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AA0718D1F447FC80087107E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AA0718F1F447FC80087107E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AA071941F447FC80087107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AA071821F447FC80087107E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2BFDC71F4BD928004F5EBD /* Speech.framework in Frameworks */,
+				3A2BFDC61F4BD921004F5EBD /* AVFoundation.framework in Frameworks */,
+				3A38236E1F453FE500821497 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A38236C1F453FE500821497 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A2BFDC11F4BD703004F5EBD /* Speech.framework */,
+				3A2BFDC51F4BD921004F5EBD /* AVFoundation.framework */,
+				3A38236D1F453FE500821497 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A38236F1F45402A00821497 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3A3823701F45406B00821497 /* BluetoothManager.swift */,
+				3A3823721F4540A800821497 /* StreamManager.swift */,
+				3A2BFDC31F4BD71C004F5EBD /* SpeechManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3AA0717C1F447FC80087107E = {
+			isa = PBXGroup;
+			children = (
+				3AA071871F447FC80087107E /* RemoteCar */,
+				3AA071861F447FC80087107E /* Products */,
+				3A38236C1F453FE500821497 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AA071861F447FC80087107E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA071851F447FC80087107E /* RemoteCar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA071871F447FC80087107E /* RemoteCar */ = {
+			isa = PBXGroup;
+			children = (
+				3AA071881F447FC80087107E /* AppDelegate.swift */,
+				3AA0718A1F447FC80087107E /* ViewController.swift */,
+				3A38236F1F45402A00821497 /* Manager */,
+				3AA0718C1F447FC80087107E /* Main.storyboard */,
+				3A4A11931F46A1C50015753C /* LaunchScreen.storyboard */,
+				3AA0718F1F447FC80087107E /* Assets.xcassets */,
+				3AA071941F447FC80087107E /* Info.plist */,
+			);
+			path = RemoteCar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AA071841F447FC80087107E /* RemoteCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA071971F447FC80087107E /* Build configuration list for PBXNativeTarget "RemoteCar" */;
+			buildPhases = (
+				3AA071811F447FC80087107E /* Sources */,
+				3AA071821F447FC80087107E /* Frameworks */,
+				3AA071831F447FC80087107E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteCar;
+			productName = RemoteCar;
+			productReference = 3AA071851F447FC80087107E /* RemoteCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AA0717D1F447FC80087107E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Talka_Ying;
+				TargetAttributes = {
+					3AA071841F447FC80087107E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 77HT6AC98W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3AA071801F447FC80087107E /* Build configuration list for PBXProject "RemoteCar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AA0717C1F447FC80087107E;
+			productRefGroup = 3AA071861F447FC80087107E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AA071841F447FC80087107E /* RemoteCar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AA071831F447FC80087107E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4A11951F46A1C50015753C /* LaunchScreen.storyboard in Resources */,
+				3AA071901F447FC80087107E /* Assets.xcassets in Resources */,
+				3AA0718E1F447FC80087107E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AA071811F447FC80087107E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA0718B1F447FC80087107E /* ViewController.swift in Sources */,
+				3A2BFDC41F4BD71C004F5EBD /* SpeechManager.swift in Sources */,
+				3A3823731F4540A800821497 /* StreamManager.swift in Sources */,
+				3A3823711F45406B00821497 /* BluetoothManager.swift in Sources */,
+				3AA071891F447FC80087107E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A4A11931F46A1C50015753C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A4A11941F46A1C50015753C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3AA0718C1F447FC80087107E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA0718D1F447FC80087107E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AA071951F447FC80087107E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AA071961F447FC80087107E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AA071981F447FC80087107E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77HT6AC98W;
+				INFOPLIST_FILE = RemoteCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Talka.RemoteCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3AA071991F447FC80087107E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77HT6AC98W;
+				INFOPLIST_FILE = RemoteCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Talka.RemoteCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AA071801F447FC80087107E /* Build configuration list for PBXProject "RemoteCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA071951F447FC80087107E /* Debug */,
+				3AA071961F447FC80087107E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AA071971F447FC80087107E /* Build configuration list for PBXNativeTarget "RemoteCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA071981F447FC80087107E /* Debug */,
+				3AA071991F447FC80087107E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AA0717D1F447FC80087107E /* Project object */;
+}
