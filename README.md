@@ -8,7 +8,7 @@
 *	iOS device
 *	some car-parts ( L298N, others )
 
-&nbsp;&nbsp;the flow chart btween clinet and server</br>
+&nbsp;&nbsp;the flow chart between client and server</br>
 ![alt text](https://raw.githubusercontent.com/g78101/raspi_ble_car/master/images/FlowChart.jpg)
 
 # How To Start
